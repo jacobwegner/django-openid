@@ -36,8 +36,10 @@ These functions make use of all of them.
 
 import pickle, base64
 from django.conf import settings
-from django.utils.hashcompat import sha_constructor
+import hashlib
 import hmac
+
+md5_constructor = hashlib.md5
 
 def dumps(obj, key = None, compress = False, extra_key = ''):
     """
