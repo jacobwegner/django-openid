@@ -12,7 +12,7 @@ If you want users to be able to register for new accounts on your site using the
 
 Here's how to set up AuthConsumer::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
     from django_openid.registration import RegistrationConsumer
     
     urlpatterns = patterns('',
@@ -23,7 +23,7 @@ Here's how to set up AuthConsumer::
 
 If you are using Django 1.1, you can do the following instead::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
     from django_openid.registration import RegistrationConsumer
     
     registration_consumer = Consumer()
